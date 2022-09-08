@@ -23,7 +23,7 @@ header{
     background-image: radial-gradient(circle at -70.44% 43.84%, #37909e 0, #80bdc7 3.85%, #6eb1bb.69%, #5fc9c9 11.54%, #5cc8d0 15.38%, #5bc8d7 19.23%, #5dc7de 23.08%, #61c5e4 26.92%, #68c4e9 30.77%, #71c2ed 34.62%, #7bc0f0 38.46%, #78aad9 42.31%, #79a8e2 46.15%, #8db3ff 50%, #a8b6f1 53.85%, #b4b4ee 57.69%, #beb1ea 61.54%, #c8aee6 65.38%, #d1abe0 69.23%, #d9a9da 73.08%, #e0a7d4 76.92%, #e6a5cc 80.77%, #eba4c5 84.62%, #efa3bd 88.46%, #f2a3b5 92.31%, #f3a3ad 96.15%, #f3a4a5 100%);
     filter: grayscale(100%);
     -webkit-filter: grayscale(78%);
-    padding: 20px;
+    padding: 1rem;
 }
 .container__menu .bx-menu{
     display: none;
@@ -248,6 +248,13 @@ body{
     padding: 1rem;
     font-size: 2rem;
 }
+.container__menu{
+padding-top: 1rem;
+height: 12vh;
+}
+.menu{
+padding-bottom: 0px;
+}
 
 .bx-shopping-bag{
     font-size: 2rem;
@@ -261,15 +268,6 @@ body{
     transition: transform 1s;
 }
 
-/* .menu{
-    display: flex;
-    flex-direction: column;
-}
-.menu ul {
-    flex-direction: column;
-    margin-top: 1px;
-    
-} */
 
 .menu ul  li {
     display: flex;
@@ -282,11 +280,15 @@ body{
 
 .menu ul li a{
     text-decoration: none;
-    font-size: 16px;
-    color: white;
+    font-size: 19px;
+    color: black;
+    text-shadow: whitesmoke 15px 12px 10px ;
     text-transform: uppercase;
-    
-} 
+}
+
+.menu ul li a:hover{
+    transform: scale(1);
+}
 
 .bx-menu{
     display: flex ;
