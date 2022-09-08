@@ -1,0 +1,114 @@
+:root{
+/* color: aliceblue; */
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url(./images/pisos-madera.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* z-index: 100; */
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+.container__title{
+margin-bottom: 2rem;
+}
+
+.container{
+    max-width: 1024px; ;
+    margin:auto ;
+    padding: 1rem 2rem;
+}
+
+.content_product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.muebles{
+    background-color: beige;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.5s;
+}
+
+.muebles:hover{
+box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(97, 134, 121);
+    color: black;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.30);
+}
+
+.bx-shopping-bag{
+    position: fixed;
+    top:1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.content_cart{
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(137, 163, 155,.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.4s;
+    border-bottom-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.50);
+    padding: 1rem;
+}
+
+.item_cart {
+    background-color: yellowgreen;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.50);
+
+
+}
+
+.item_cart-img{
+    width:50% ;
+}
+.content_cart-body{
+    height: 90%;
+    background-color: rgba(129, 176, 162, 0.8);
+    gap: 1rem;
+    overflow-y: scroll;
+}
+
+.content_cart-total{
+    height: 10%;
+    background-color: rgba(99, 134, 124, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__cart-show{
+    transform: translateX(0);
+}
+
