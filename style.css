@@ -59,16 +59,22 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* padding-right: 10rem;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    padding-left: 10rem;   */
-}
-.welcome{
-    font-size:400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 10rem;  
+}
+.welcome{
+    width: 80vw;
+    height: 50vh; */
+    font-size:400px;
+    /* display: flex; 
+    /* justify-content: center; 
+    /* align-items: center; 
+    /* padding: 5rem;
 
 }
 .welcome h1 {
@@ -153,8 +159,6 @@ box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .content_cart{
-    width: 50vw;
-    height: 100vh;
     background-color: rgb(137, 163, 155,.8);
     position: fixed;
     top: 0;
@@ -169,6 +173,7 @@ box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 
 .item_cart {
     background-color: yellowgreen;
+    height: 100px;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.50);
     display: flex;
@@ -180,7 +185,10 @@ box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     width:50% ;
 
 }
+.item_cart-img img{
+    width:100px ;
 
+}
 .item_cart-title{
 font-size: 1.3rem;
 padding: 0.8rem;
@@ -189,8 +197,7 @@ flex-direction: column;
 }
 .item_cart-options{
 display: flex;
-justify-content: center;
-align-items: center;
+flex-direction: column;
 }
 
 .content_cart h2{
@@ -210,7 +217,7 @@ align-items: center;
 }
 
 .content_cart-total{
-    height: 10%;
+    height: 15%;
     background-color: rgba(99, 134, 124, 0.7);
     display: flex;
     justify-content: center;
@@ -223,7 +230,7 @@ align-items: center;
 
 }
 /* *********************************************MEDIA QUERY PARA MOVILE************************************** */
-@media (max-width: 750px){
+@media (max-width: 750px ){
 
 body{
     overflow-x: hidden;
@@ -247,10 +254,14 @@ body{
 .showmenu{
     transform: translateY(0);
 }
-
+.menu{
+    display: flex;
+    flex-direction: column;
+}
 .menu ul {
     flex-direction: column;
     margin-top: 1px;
+    
 }
 
 .menu ul  li {
@@ -266,8 +277,7 @@ body{
 } 
 
 .bx-menu{
-    position: fixed;
-    display: inherit ;
+    display: flex ;
     justify-content: center;
     align-items: center;
     background-color: rgb(245, 245, 245, 0.3) ;
@@ -276,9 +286,15 @@ body{
     cursor: pointer; 
     transition: all 300ms;
 }
+#btnHambu{
+    display: flex;
+    width: 50px;
 
-#btnHamburguer{
-    display: inline;
+}
+.content_cart{
+    width: 80vw;
+    height: auto;
+    padding-top: 0.rem;
 }
 .content_cart h2{
     margin-left: 1.3rem;
@@ -290,11 +306,6 @@ padding: 0.8rem;
 display: flex;
 flex-direction: column;
 }
-
-
-
-
-
 
 }
 
