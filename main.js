@@ -96,7 +96,7 @@ contentCartBody.addEventListener("click", (e)=> {
         const idProducts= +e.target.parentElement.id;
         delete cart[idProducts];
     }
-
+// width desktop 30vw- mobile 80vw
     printFoodInCart();
 
 })
