@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Playfair+Display:ital@1&display=swap');
+
 :root{
-/* color: aliceblue; */
+--colorletras1:rgb(18, 2, 35);
 }
 *{
     padding: 0;
@@ -7,15 +9,49 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    /* background-image: url(./images/pisos-madera.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
-    /* z-index: 100; */
+
+@media (max-width: 2000px ){ 
+/* **************************NAVEGADOR******************************* */
+header{ 
+    width: 100%;
+    height: 80px;
+    position:fixed;
+    z-index: 200;
 }
-/* **************************PARTE PRINCIPAL******************************* */
+.container__menu{
+    max-width: auto;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: radial-gradient(circle at -70.44% 43.84%, #37909e 0, #80bdc7 3.85%, #6eb1bb.69%, #5fc9c9 11.54%, #5cc8d0 15.38%, #5bc8d7 19.23%, #5dc7de 23.08%, #61c5e4 26.92%, #68c4e9 30.77%, #71c2ed 34.62%, #7bc0f0 38.46%, #78aad9 42.31%, #79a8e2 46.15%, #8db3ff 50%, #a8b6f1 53.85%, #b4b4ee 57.69%, #beb1ea 61.54%, #c8aee6 65.38%, #d1abe0 69.23%, #d9a9da 73.08%, #e0a7d4 76.92%, #e6a5cc 80.77%, #eba4c5 84.62%, #efa3bd 88.46%, #f2a3b5 92.31%, #f3a3ad 96.15%, #f3a4a5 100%);
+    z-index: 100;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(78%);
+    padding: 2rem;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+}
+
+.menu ul li{
+    list-style: none;
+    margin: 5rem;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 23px;
+    color:var(--colorletras1);
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+/* *************************************************************************************************** */
 .inicio {
     background-image: url(./images/frente-tienda.jpg);
     background-position: center;
@@ -36,7 +72,7 @@ section h1 {
     background-color: rgb(120, 119, 119,0.3);
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
     "AppleGothic", sans-serif;
-    font-size: 92px;
+    font-size: 7rem;
     text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
@@ -107,7 +143,7 @@ box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     right: 1rem;
     cursor: pointer;
     font-size: 3rem;
-    z-index: 1;
+    z-index: 300;
 }
 
 .content_cart{
@@ -155,3 +191,10 @@ box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     transform: translateX(0);
 }
 
+}
+/* *********************************************MEDIA QUERY PARA MOVILE************************************** */
+@media (max-width: 750px ){
+
+
+
+}
