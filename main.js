@@ -59,7 +59,17 @@ function printFoodInCart() {
         `;
     });
 
-    contentCartBody.innerHTML= html
+    contentCartBody.innerHTML= html;
+
+    const carttotal = document.querySelector(".content_cart-total")
+        let totaltext = "";
+        let totalnumber = 0;
+        arrayCart.forEach(({ price, amount}) => {
+        let subtotalnumber = price*amount;
+        totalnumber += subtotalnumber;
+        })
+        totaltext += `<h2>Total: $<span id="total">${totalnumber}</span></h2>`;
+        carttotal.innerHTML= totaltext;
 }
 
 contentProduct.addEventListener(("click"), (e)=> {
