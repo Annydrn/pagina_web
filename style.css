@@ -172,14 +172,16 @@ box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .item_cart {
-    width: 80%;
+    width: 90%;
     background-color: rgb(176, 184, 160);
     height: 100px;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.50);
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
+    padding-top: 0.2rem;
+    padding-left: 0.1rem;
 }
 
 .item_cart-img{
@@ -199,6 +201,9 @@ flex-direction: column;
 .item_cart-options{
 display: flex;
 flex-direction: column;
+align-items: center;
+font-size: 1.3rem;
+padding-left: 0.8rem;
 }
 
 .content_cart h2{
@@ -254,6 +259,7 @@ height: 12vh;
 }
 .menu{
 padding-bottom: 0px;
+
 }
 
 .bx-shopping-bag{
@@ -268,6 +274,12 @@ padding-bottom: 0px;
     transition: transform 1s;
 }
 
+.menu ul{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .menu ul  li {
     display: flex;
@@ -276,6 +288,7 @@ padding-bottom: 0px;
     margin-top: 30px;
     margin-left: 0px;
     padding-left: 20px;
+    
 }
 
 .menu ul li a{
@@ -284,6 +297,7 @@ padding-bottom: 0px;
     color: black;
     text-shadow: whitesmoke 15px 12px 10px ;
     text-transform: uppercase;
+    
 }
 
 .menu ul li a:hover{
