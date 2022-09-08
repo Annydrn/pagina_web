@@ -69,7 +69,7 @@ contentProduct.addEventListener(("click"), (e)=> {
         const findProducts= dataDB.find((item)=> item.id=== idProducts)
 
         if(cart[idProducts]){
-            cart[idProducts].amount++;
+            alert("este articulo ya fue agregado");
 
         } else{
             cart[idProducts]= findProducts;
@@ -82,25 +82,34 @@ contentProduct.addEventListener(("click"), (e)=> {
 
 contentCartBody.addEventListener("click", (e)=> {
     if (e.target.classList.contains("bx-comment-minus")) {
-        const idProducts= +e.target.parentElement.id;
+        const idProducts= +e.target.parentElement.parentElement.id;
         if(cart[idProducts].amount>1){
             cart[idProducts].amount--;
         }
         
     }
     if (e.target.classList.contains("bx-message-square-add")) {
-        const idProducts= +e.target.parentElement.id;
+        const idProducts= +e.target.parentElement.parentElement.id;
 
         if(cart[idProducts].amount<cart[idProducts].stock){
             cart[idProducts].amount++;
-        }
+        }else{cart[idProducts].amount}
     }
     
     if (e.target.classList.contains("bx-trash-alt")) {
-        const idProducts= +e.target.parentElement.id;
+        const idProducts= +e.target.parentElement.parentElement.id;
         delete cart[idProducts];
     }
 // width desktop 30vw- mobile 80vw
     printFoodInCart();
 
 })
+
+// ****************************CODIGO PARA HAMBURGUESA A MOVILE***********************
+const Burger = document.querySelector("#btnHambu");
+const Nav = document.querySelector("#nav");
+
+Burger.addEventListener("click", function () {
+    Nav.classList.toggle("showmenu2");
+    
+});
