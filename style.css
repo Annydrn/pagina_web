@@ -233,6 +233,9 @@ padding-left: 0.8rem;
 .content__cart-show{
     transform: translateX(0);
 }
+.muebles__body p{
+    font-size: 1.25rem;
+}
 
 }
 /* *********************************************MEDIA QUERY PARA MOVILE************************************** */

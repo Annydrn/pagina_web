@@ -1,17 +1,17 @@
 export const dataDB=[
     {
         id:1,
-        name:"Sofa Verde",
+        name:"Sofa Beige",
         urlImages: "./images/nuevasIMG/sofa-claro.webp",
         stock:4,
-        price:2.000,
+        price:2000,
     },
     {
         id:2,
         name:"Sofa Gris",
         urlImages: "./images/nuevasIMG/sofa-gris.webp",
         stock:6,
-        price:1.950,
+        price:1950,
     },
     {
         id:3,
@@ -32,34 +32,34 @@ export const dataDB=[
         name:"Respaldo Capitone",
         urlImages: "./images/nuevasIMG/Respaldo-Cama.jpg",
         stock:15,
-        price:30,
+        price:650,
     },
     {
         id:6,
         name:"Velador",
         urlImages: "./images/nuevasIMG/velador.webp",
         stock:8,
-        price:45,
+        price:120,
     },
     {
         id:7,
         name:"Alfombra Jaipur",
         urlImages: "./images/nuevasIMG/alfombra-lino.jpg",
         stock:12,
-        price:3.500,
+        price:1200,
     },
     {
         id:8,
         name:"Almohadones",
         urlImages: "./images/nuevasIMG/cojines.webp",
         stock:10,
-        price:350,
+        price:35,
     },
     {
         id:9,
         name:"Sabanas 200 Hilos",
         urlImages:"./images/nuevasIMG/sabanas.webp",
         stock:8,
-        price:1.500,
+        price:75,
     }
 ]
