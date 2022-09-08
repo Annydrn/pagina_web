@@ -40,12 +40,13 @@ function printFoodInCart() {
     arrayCart.forEach(({id, name, urlImages, amount}) => {
         html +=`
         <div class="item_cart">
-        <div class="item_cart-img">
+            <div class="item_cart-img">
             <img src="${urlImages}" alt="">
             </div>
 
-            <h4 class="item_cart-title"> ${name}</h4>
+            
             <div class="item_cart-options" id= "${id}">
+            <h4 class="item_cart-title"> ${name}</h4>
                 <i class='bx bx-message-square-add'></i>
                 <span id="amount">${amount}</span>
                 <i class='bx bx-comment-minus'></i>
