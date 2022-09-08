@@ -215,18 +215,7 @@ box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     font-size: 2rem;
 }
 
-.menu nav{
-    position: fixed;
-    top: 0;
-    transform:translateY(-200%) ;
-    background:rgb(211, 150, 150);
-    width: 250px;
-    height: 100vh;
-    padding: 40px;
-    z-index: 1;
-    transition: all 300ms;
 
-}
 
 #btn_menu{
             z-index: 5900;
